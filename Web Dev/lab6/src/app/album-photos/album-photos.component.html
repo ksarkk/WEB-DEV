@@ -1,0 +1,8 @@
+<button (click)="goBack()">Back</button>
+
+<div *ngIf="loaded">
+  <div *ngFor="let photo of photos">
+    <img src="{{ photo.thumbnailUrl }}" alt="{{ photo.title }}">
+  </div>
+</div>
+
