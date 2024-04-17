@@ -1,0 +1,10 @@
+<h1>Companies</h1>
+
+<ul>
+  <li *ngFor="let company of companies">
+    {{company.id}}
+    <a [title]="company.name + ' details'" [routerLink]="['/companies/', company.id]">{{company.name}}</a>
+    <h3>{{company.city}}</h3>
+    <p>{{company.description}}</p>
+  </li>
+</ul>
